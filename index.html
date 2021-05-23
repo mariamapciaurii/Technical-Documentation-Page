@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="centerIt" id="topBox">
+        <h1 class="centerIt">HTML technical documentation page</h1>
+    </header>
+    <nav id="navbar">
+        <header>
+            <p class="document-about">Everything about HTML </p>
+        </header>
+      <ul id="content-list">
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#editors">Editors</a></li>
+        <li><a class="nav-link" href="#basic_examples">Basic Examples</a></li>
+        <li><a class="nav-link" href="#elements">Elements</a></li>
+        <li><a class="nav-link" href="#attributes">Attributes</a></li>
+        <li><a class="nav-link" href="#headings">Headings</a></li>
+        <li><a class="nav-link" href="#paragraphs">Paragraphs</a></li>
+        <li><a class="nav-link" href="#styles">Styles</a></li>
+        <li><a class="nav-link" href="#text_formatting">Text Formatting</a></li>
+        <li><a class="nav-link" href="#comments">Comments</a></li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+     <section class="main-section" id="introduction">
+       <header>
+          <h2 class="main-head">Introduction</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <h3 class="head">What is HTML.</h3>
+        <p class="main-p">HTML is the standard markup language for creating Web pages.</p>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language</li>
+          <li>HTML describes the structure of a Web page</li>
+          <li>HTML consists of a series of elements</li>
+          <li>HTML elements tell the browser how to display the content</li>
+          <li>HTML elements are represented by tags</li>
+          <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+          <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+        </ul>
+        <hr class="subject-div">
+        <h3 class="head">A Simple HTML Document</h3>
+        <pre class="html-code">
+          &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Page Title&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;h1&gt;My First Heading&lt;/h1&gt;
+                &lt;p&gt;My first paragraph.&lt;/p&gt;
+              &lt;/body&gt;
+           &lt;/html&gt;</pre>
+        <h4 class="head">Example Explained</h4>
+        <ul>
+          <li>The <span class="code-in-text">&lt;!DOCTYPE html&gt;</span> declaration defines this document to be HTML5</li>
+          <li>The <span class="code-in-text">&lt;html&gt;</span> element is the root element of an HTML page</li>
+          <li>The <span class="code-in-text">&lt;head&gt;</span> element contains meta information about the document</li>
+          <li>The <span class="code-in-text">&lt;title&gt;</span> element specifies a title for the document</li>
+          <li>The <span class="code-in-text">&lt;body&gt;</span> element contains the visible page content</li>
+          <li>The <span class="code-in-text">&lt;h1&gt;</span> element defines a large heading</li>
+          <li>The <span class="code-in-text">&lt;p&gt;</span> element defines a paragraph</li>
+        </ul>
+        <hr class="subject-div">
+        <h3 class="head">HTML tags</h3>
+        <p class="main-p">HTML tags <code>selectAll()</code>  are element names surrounded by angle brackets:</p>
+        <p class="main-p example-text">&lt;tagname&gt; content  <code>selectAll()</code> goes here...&lt;/tagname&gt;</p>
+        <ul>
+          <li>HTML tags normally come <strong>in pairs</strong> like <span class="code-in-text">&lt;p&gt;</span> and <span class="code-in-text">&lt;/p&gt;</span></li>
+          <li>The first tag in a pair is the <strong>start tag</strong>, the second tag is the <strong>end tag</strong></li>
+          <li>The end tag is written like the start tag, but with a <strong>forward slash</strong> inserted before the tag name</li>
+        </ul>
+        <p class="main-p tips"><strong>Tip:</strong> The start  <code>selectAll()</code>  tag is also called the <strong>opening tag</strong>, and the end tag the <strong>closing tag.</strong></p>
+        <hr class="subject-div">
+        <h3 class="head">Web Browsers</h3>
+        <p class="main-p">The purpose of a web browser<code>selectAll()</code>  (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them.<br>The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+        <img class="text-images" src="https://www.w3schools.com/html/img_chrome.png" alt="Web page in a browser">
+        <hr class="subject-div">
+        <h3 class="head">HTML Page Structure</h3>
+        <p class="main-p">Below is a  <code>selectAll()</code> visualization of an HTML page structure:</p>
+        <img class="text-images" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fqatechhub.com%2Fwp-content%2Fuploads%2F2016%2F09%2FBasicHtmlStructure.png%3Fresize%3D540%252C360&f=1&nofb=1" alt="Structure of HTML page">
+        <p class="main-p tips"><strong>Note:</strong> Only the content inside the &lt;body&gt; section (the white area above) is displayed in a browser.</p>
+        <hr class="subject-div">
+        <h3 class="head">The &lt;!DOCTYPE&gt; Declaration</h3>
+        <p class="main-p">The <span class="code-in-text">&lt;!DOCTYPE&gt;</span> declaration represents the document type, and helps browsers to display web pages correctly.<br>It must only appear once, at the top of the page (before any HTML tags).<br>The <span class="code-in-text">&lt;!DOCTYPE&gt;</span> declaration is not case sensitive.<br>The <span class="code-in-text">&lt;!DOCTYPE&gt;</span> declaration for HTML5 is:</p>
+        <pre class="html-code">
+          &lt;!DOCTYPE html&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">HTML Versions</h3>
+        <p class="main-p">Since the early days of the web, there have been many versions of HTML:</p>
+        <table class="tables">
+         <tr>
+           <th>Version</th>
+           <th>Year</th>
+         </tr>
+         <tr>
+           <td>HTML</td>
+           <td>1991</td>
+         </tr>
+         <tr>
+           <td>HTML 2.0</td>
+           <td>1995</td>
+         </tr>
+         <tr>
+           <td>HTML 3.2</td>
+           <td>1997</td>
+         </tr>
+         <tr>
+           <td>HTML 4.01</td>
+           <td>1999</td>
+         </tr>
+         <tr>
+           <td>XHTML</td>
+           <td>2000</td>
+         </tr>
+         <tr>
+           <td>HTML5</td>
+           <td>2014</td>
+         </tr>
+        </table>
+      </article>
+     </section>
+     <section class="main-section" id="editors">
+       <header>
+        <h2 class="main-head">Editors</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <h3 class="head">Write HTML Using Notepad or TextEdit</h3>
+        <p class="main-p">Web pages can be created and modified by using professional HTML editors.<br>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).<br>We believe using a simple text editor is a good way to learn HTML.<br>Follow the steps below to create your first web page with Notepad or TextEdit.</p>
+        <hr class="subject-div">
+        <h3 class="head">Step 1: Open Notepad (PC)</h3>
+        <p class="main-p"><strong>Windows 8 or later:</strong><br>Open the <strong>Start Screen</strong> (the window symbol at the bottom left on your screen). Type <strong>Notepad</strong>.<br><strong>Windows 7 or earlier:</strong><br>Open <strong>Start > Programs > Accessories > Notepad</strong></p>
+        <h3 class="head">Step 1: Open TextEdit (Mac)</h3>
+        <p class="main-p">Open <strong>Finder > Applications > TextEdit</strong><br>Also change some preferences to get the application to save files correctly. In <strong>Preferences > Format > </strong>choose <strong>"Plain Text"</strong><br>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".<br><strong>Then open a new document to place the code.</strong></p>
+        <hr class="subject-div">
+        <h3 class="head">Step 2: Write Some HTML</h3>
+        <p class="main-p">Write or copy some HTML into Notepad.</p>
+        <pre class="html-code">
+          &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;body&gt;
+                &lt;h1&gt;My First Heading&lt;/h1&gt;
+                &lt;p&gt;My first paragraph.&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;</pre>
+        <img class="text-images" src="https://www.w3schools.com/html/img_notepad.png" alt="Example in notepad">
+        <hr class="subject-div">
+        <h3 class="head">Step 3: Save the HTML Page</h3>
+        <p class="main-p">Save the file on your computer. Select <strong>File > Save as</strong> in the Notepad menu.<br>Name the file <strong>"index.htm"</strong> and set the encoding to <strong>UTF-8</strong> (which is the preferred encoding for HTML files).</p>
+        <img class="text-images" src="https://www.w3schools.com/html/img_saveas.png" alt="Save as window">
+        <p class="main-p tips">You can use either .htm or .html as file extension. There is no difference, it is up to you.</p>
+        <hr class="subject-div">
+        <h3 class="head">Step 4: View the HTML Page in Your Browser</h3>
+        <p class="main-p">Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").<br>The result will look much like this:</p>
+        <img class="text-images" src="https://www.w3schools.com/html/img_chrome.png" alt="html file open in browser">
+      </article>
+     </section>
+     <section class="main-section" id="basic_examples">
+       <header>
+          <h2 class="main-head">Basic Examples</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <p class="main-p">Don't worry if these examples use tags you have not learned.<br>You will learn about them in the next chapters.</p>
+        <hr class="subject-div">
+        <h3 class="head">Documents</h3>
+        <p class="main-p">All HTML documents must start with a document type declaration: <span class="code-in-text">&lt;!DOCTYPE html&gt;</span>.<br>The HTML document itself begins with <span class="code-in-text">&lt;html&gt;</span> and ends with <span class="code-in-text">&lt;/html&gt;</span>.<br>The visible part of the HTML document is between <span class="code-in-text">&lt;body&gt;</span> and <span class="code-in-text">&lt;/body&gt;</span>. </p>
+        <pre class="html-code">
+          &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;body&gt;
+                &lt;h1&gt;My First Heading&lt;/h1&gt;
+                &lt;p&gt;My first paragraph.&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Headings</h3>
+        <p class="main-p">HTML headings are defined with the <span class="code-in-text">&lt;h1&gt;</span> to <span class="code-in-text">&lt;h6&gt;</span> tags.<br><span class="code-in-text">&lt;h1&gt;</span> defines the most important heading. <span class="code-in-text">&lt;h6&gt;</span> defines the least important heading: </p>
+        <pre class="html-code">
+          &lt;h1&gt;This is heading 1&lt;/h1&gt;
+          &lt;h2&gt;This is heading 2&lt;/h2&gt;
+          &lt;h3&gt;This is heading 3&lt;/h3&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Paragraphs</h3>
+        <p class="main-p">HTML paragraphs are defined with the <span class="code-in-text">&lt;p&gt;</span> tag:</p>
+        <pre class="html-code">
+          &lt;p&gt;This is a paragraph.&lt;/p&gt;
+          &lt;p&gt;This is another paragraph.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Links</h3>
+        <p class="main-p">HTML links are defined with the <span class="code-in-text">&lt;a&gt;</span> tag:</p>
+        <pre class="html-code">
+          &lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</pre>
+        <p class="main-p">The link's destination is specified in the <span class="code-in-text">href</span> attribute.<br>Attributes are used to provide additional information about HTML elements.<br>You will learn more about attributes in a later chapter.</p>
+        <hr class="subject-div">
+        <h3 class="head">Images</h3>
+        <p class="main-p">HTML images are defined with the <span class="code-in-text">&lt;img&gt;</span> tag.<br>The source file (<span class="code-in-text">src</span>), alternative text (<span class="code-in-text">alt</span>), <span class="code-in-text">width</span>, and <span class="code-in-text">height</span> are provided as attributes:</p>
+        <pre class="html-code">
+          &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Buttons</h3>
+        <p class="main-p">HTML buttons are defined with the <span class="code-in-text">&lt;button&gt;</span> tag:</p>
+        <pre class="html-code">
+          &lt;button&gt;Click me&lt;/button&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Lists</h3>
+        <p class="main-p">HTML lists are defined with the <span class="code-in-text">&lt;ul&gt;</span> (unordered/bullet list) or the <span class="code-in-text">&lt;ol&gt;</span> (ordered/numbered list) tag, followed by <span class="code-in-text">&lt;li&gt;</span><br>tags (list items):</p>
+        <pre class="html-code">
+          &lt;ul&gt;
+            &lt;li&gt;Coffee&lt;/li&gt;
+            &lt;li&gt;Tea&lt;/li&gt;
+            &lt;li&gt;Milk&lt;/li&gt;
+          &lt;/ul&gt;
+  
+          &lt;ol&gt;
+            &lt;li&gt;Coffee&lt;/li&gt;
+            &lt;li&gt;Tea&lt;/li&gt;
+            &lt;li&gt;Milk&lt;/li&gt;
+          &lt;/ol&gt;</pre>
+      </article>
+     </section>
+     <section class="main-section" id="elements">
+       <header>
+          <h2 class="main-head">Elements</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <h3 class="head">Elements</h3>
+        <p class="main-p">An HTML element usually consists of a <strong>start</strong> tag and an <strong>end</strong> tag, with the content inserted in between:</p>
+        <p class="main-p example-text"><span class="code-in-text">&lt;tagname&gt;</span> Content goes here...<span class="code-in-text">&lt;/tagname&gt;</span></p>
+        <p class="main-p">The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+        <p class="main-p example-text"> <span class="code-in-text">&lt;p&gt;</span> My first paragraph.<span class="code-in-text">&lt;/p&gt;</span></p>
+        <table class="tables">
+          <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt;</td>
+            <td>My First Heading</td>
+            <td>&lt;/h1&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;</td>
+            <td>My first paragraph.</td>
+            <td>&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <p class="main-p tips">HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the &lt;br&gt;<br> element (which indicates a line break).</p>
+        <hr class="subject-div">
+        <h3 class="head">Nested Elements</h3>
+        <p class="main-p">HTML elements can be nested (elements can contain elements).<br>All HTML documents consist of nested HTML elements.<br>This example contains four HTML elements:</p>
+        <pre class="html-code">
+          &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;body&gt;
+  
+                &lt;h1&gt;My First Heading&lt;/h1&gt;
+                &lt;p&gt;My first paragraph.&lt;/p&gt;
+  
+              &lt;/body&gt;
+            &lt;/html&gt;</pre>
+        <h4 class="head">Example Explained</h4>
+        <p class="main-p">The <span class="code-in-text">&lt;html&gt;</span> element defines the <strong>whole</strong> document.<br>It has a <strong>start</strong> tag &lt;html&gt; and an <strong>end</strong> tag &lt;/html&gt;.<br>Inside the &lt;html&gt; element is the <span class="code-in-text">&lt;body&gt;</span> element.</p>
+        <pre class="html-code">
+          &lt;html&gt;
+            &lt;body&gt;
+  
+              &lt;h1&gt;My First Heading&lt;/h1&gt;
+              &lt;p&gt;My first paragraph.&lt;/p&gt;
+  
+            &lt;/body&gt;
+          &lt;/html&gt;</pre>
+        <p class="main-p">The <span class="code-in-text">&lt;body&gt;</span> element defines the <strong>document body</strong>.<br>It has a <strong>start</strong> tag &lt;body&gt; and an <strong>end</strong> tag &lt;/body&gt;.<br>Inside the &lt;body&gt; element is two other HTML elements: <span class="code-in-text">&lt;h1&gt;</span> and <span class="code-in-text">&lt;p&gt;</span>.</p>
+        <pre class="html-code">
+          &lt;body&gt;
+  
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+  
+          &lt;/body&gt;</pre>
+        <p class="main-p">The <span class="code-in-text">&lt;h1&gt;</span> element defines a <strong>heading</strong>.<br>It has a <strong>start</strong> tag &lt;h1&gt; and an <strong>end</strong> tag &lt;/h1&gt;.<br>The element <strong>content</strong> is: My First Heading.</p>
+        <pre class="html-code">
+          &lt;h1&gt;My First Heading&lt;h1&gt;</pre>
+        <p class="main-p">The <span class="code-in-text">&lt;p&gt;</span> element defines a <strong>paragraph</strong>.<br>It has a <strong>start</strong> tag &lt;p&gt; and an <strong>end</strong> tag &lt;/p&gt;.<br>The element <strong>content</strong> is: My first paragraph.</p>
+        <pre class="html-code">
+          &lt;p&gt;My first paragraph.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Do Not Forget the End Tag</h3>
+        <p class="main-p"></p>
+        <pre class="html-code">
+          &lt;html&gt;
+            &lt;body&gt;
+  
+              &lt;p&gt;This is a paragraph
+              &lt;p&gt;This is a paragraph
+  
+            &lt;/body&gt;
+          &lt;/html&gt;</pre>
+        <p class="main-p">The example above works in all browsers, because the closing tag is considered optional.<br><strong>Never rely on this. It might produce unexpected results and/or errors if you forget the end tag.</strong></p>
+        <hr class="subject-div">
+        <h3 class="head">Empty Elements</h3>
+        <p class="main-p">HTML elements with no content are called empty elements.<br><span class="code-in-text">&lt;br&gt;</span> is an empty element without a closing tag (the <span class="code-in-text">&lt;br&gt;</span> tag defines a line break):</p>
+        <pre class="html-code">
+          &lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</pre>
+        <p class="main-p">Empty elements can be "closed" in the opening tag like this: &lt;br/&gt;.</p>
+        <p class="main-p">HTML5 does not require empty elements to be closed. But if you want stricter validation, or if you need to make your<br> document readable by XML parsers, you must close all HTML elements properly.</p>
+        <hr class="subject-div">
+        <h3 class="head">HTML Is Not Case Sensitive</h3>
+        <p class="main-p">HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.</p>
+        <p class="main-p">The HTML5 standard does not require lowercase tags, but W3C <strong>recommends</strong> lowercase in HTML, and <strong>demands</strong> lowercase for stricter document types like XHTML.</p>
+        <p class="main-p tips">Its always better to use lowercase tags.</p>
+      </article>
+     </section>
+     <section class="main-section" id="attributes">
+       <header>
+          <h2 class="main-head">Attributes</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <p class="main-p">Attributes provide additional information about HTML elements.</p>
+        <hr class="subject-div">
+        <h3 class="head">Attributes</h3>
+        <ul>
+          <li>All HTML elements can have <strong>attributes</strong>
+          <li>Attributes provide <strong>additional information</strong> about an element
+          <li>Attributes are always specified in the <strong>start tag</strong>
+          <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong>
+        </ul>
+        <hr class="subject-div">
+        <h3 class="head">The href Attribute</h3>
+        <p class="main-p">HTML links are defined with the <span class="code-in-text">&lt;a&gt;</span> tag. The link address is specified in the <span class=code-in-text>href</span> attribute:</p>
+        <pre class="html-code">
+          &lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</pre> 
+        <p class="main-p">You will learn more about links and the <span class="code-in-text">&lt;a&gt;</span> tag later in this tutorial.</p>
+        <hr class="subject-div">
+        <h3 class="head">The src Attribute</h3>
+        <p class="main-p">HTML images are defined with the <span class="code-in-text">&lt;img&gt;</span> tag.<br>The filename of the image source is specified in the <span class=code-in-text>src</span> attribute:</p>
+        <pre class="html-code">
+         &lt;img src="img_girl.jpg"&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">The width and height Attributes</h3>
+        <p class="main-p"> HTML images also have <span class=code-in-text>width</span> and <span class=code-in-text>height</span> attributes, which specifies the width and height of the image:</p>
+        <pre class="html-code">
+         &lt;img src="img_girl.jpg" width="500" height="600"&gt;</pre>
+        <p class="main-p">The width and height are specified in pixels by default; so width="500" means 500 pixels wide.</p>
+        <hr class="subject-div">
+        <h3 class="head">The alt Attribute</h3>
+        <p class="main-p">The <span class=code-in-text>alt</span> attribute specifies an alternative text to be used, if an image cannot be displayed.</p>
+        <p class="main-p">The value of the <span class=code-in-text>alt</span> attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a vision<br>impaired person, can "hear" the element.</p>
+        <pre class="html-code">
+          &lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;</pre>
+        <p class="main-p tips">The <span class=code-in-text>alt</span> attribute is also useful if the image cannot be displayed (e.g. if it does not exist):</p>
+        <hr class="subject-div">
+        <h3 class="head">The style Attribute</h3>
+        <p class="main-p">The <span class=code-in-text>style</span> attribute is used to specify the styling of an element, like color, font, size etc.</p>
+        <pre class="html-code">
+          &lt;p style="color:red"&gt;This is a paragraph.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">The lang Attribute</h3>
+        <p class="main-p">The language of the document can be declared in the <span class="code-in-text">&lt;html&gt;</span> tag.<br>The language is declared with the <span class=code-in-text>lang</span> attribute.<br>Declaring a language is important for accessibility applications (screen readers) and search engines:</p>
+        <pre class="html-code">
+          &lt;!DOCTYPE html&gt;
+            &lt;html lang="en-US"&gt;
+              &lt;body&gt;
+  
+                ...
+  
+              &lt;/body&gt;
+            &lt;/html&gt;</pre>
+        <p class="main-p">The first two letters specify the language (en). If there is a dialect, add two more letters (US).</p>
+        <hr class="subject-div">
+        <h3 class="head">The title Attribute</h3>
+        <p class="main-p">Here, a <span class=code-in-text>title</span> attribute is added to the <span class="code-in-text">&lt;p&gt;</span> element. The value of the title attribute will be displayed as a tooltip when you<br> mouse over the paragraph:</p>
+        <pre class="html-code">
+          &lt;p title="I'm a tooltip"&gt;
+          This is a paragraph.
+          &lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Use Lowercase Attributes</h3>
+        <p class="main-p">The HTML5 standard does not require lowercase attribute names.<br>The title attribute can be written with uppercase or lowercase like <strong>title</strong> or <strong>TITLE</strong>.<br>W3C <strong>recommends</strong> lowercase in HTML, and <strong>demands</strong> lowercase for stricter document types like XHTML.</p>
+        <p class="main-p tips">Always use lowercase attribute names.</p>
+        <hr class="subject-div">
+        <h3 class="head">Quote Attribute Values</h3>
+        <p class="main-p">The HTML5 standard does not require quotes around attribute values.<br>The <span class=code-in-text>href</span> attribute, demonstrated above, can be written without quotes:</p>
+        <p class="main-p">W3C <strong>recommends</strong> quotes in HTML, and <strong>demands</strong> quotes for stricter document types like XHTML.<br>Sometimes it is <strong>necessary</strong> to use quotes. This example will not display the title attribute correctly, because it contains a<br>space:</p>
+        <pre class="html-code">
+          &lt;p title=About W3C&gt;</pre> 
+        <p class="main-p tips">Using quotes are the most common. Omitting quotes can produce errors.<br>Always use quotes around attribute values.</p>
+        <hr class="subject-div">
+        <h3 class="head">Single or Double Quotes?</h3>
+        <p class="main-p">Double quotes around attribute values are the most common in HTML, but single quotes can also be used.<br>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+        <pre class="html-code">
+          &lt;p title='John "ShotGun" Nelson'&gt;</pre>
+        <p class="main-p">Or vice versa:</p>
+        <pre class="html-code">
+          &lt;p title="John 'ShotGun' Nelson"&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Chapter Summary</h3>
+        <ul>
+          <li>All HTML elements can have <strong>attributes</strong>
+          <li>The <span class=code-in-text>title</span> attribute provides additional "tool-tip" information
+          <li>The <span class=code-in-text>href</span> attribute provides address information for links
+          <li>The <span class=code-in-text>width</span> and <span class=code-in-text>height</span> attributes provide size information for images
+          <li>The <span class=code-in-text>alt</span> attribute provides text for screen readers
+          <li>Always use <strong>lowercase</strong> attribute names
+          <li>Always <strong>quote</strong> attribute values
+        </ul>
+        <hr class="subject-div">
+        <h3 class="head">Attributes</h3>
+        <p class="main-p">Below is an alphabetical list of some attributes often used in HTML, which you will learn more about in this tutorial:</p>
+        <table class="tables">
+         <tr>
+           <th>Attribute</th>
+           <th>Description</th>
+         </tr>
+         <tr>
+           <td>alt</td>
+           <td>Specifies an alternative text for an image, when the image cannot be displayed</td>
+         </tr>
+         <tr>
+           <td>disabled</td>
+           <td>Specifies that an input element should be disabled</td>
+         </tr>
+         <tr>
+           <td>href</td>
+           <td>Specifies the URL (web address) for a link</td>
+         </tr>
+         <tr>
+           <td>id</td>
+           <td>Specifies a unique id for an element</td>
+         </tr>
+         <tr>
+           <td>src</td>
+           <td>Specifies the URL (web address) for an image</td>
+         </tr>
+         <tr>
+           <td>style</td>
+           <td>Specifies an inline CSS style for an element</td>
+         </tr>
+         <tr>
+           <td>title</td>
+           <td>Specifies extra information about an element (displayed as a tool tip)</td>
+         </tr>
+        </table>
+      </article>
+     </section>
+     <section class="main-section" id="headings">
+       <header>
+          <h2 class="main-head">Headings</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <h3 class="head">Headings</h3>
+        <p class="main-p example-text">
+         <span style="font-size: 22px">Heading 1</span><br><span style="font-size: 18px">Heading 2</span><br><span style="font-size: 16px">Heading 3</span><br><span style="font-size: 14px">Heading 4</span><br><span style="font-size: 12px">Heading 5</span><br><span style="font-size: 10px">Heading 6</span></p>
+        <hr class="subject-div">
+        <h3 class="head">Headings</h3>
+        <p class="main-p">Headings are defined with the <span class="code-in-text">&lt;h1&gt;</span> to <span class="code-in-text">&lt;h6&gt;</span> tags.<br><span class="code-in-text">&lt;h1&gt;</span>defines the most important heading. <span class="code-in-text">&lt;h6&gt;</span> defines the least important heading.</p>
+        <pre class="html-code">
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          &lt;h2&gt;Heading 2&lt;/h2&gt;
+          &lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h4&gt;Heading 4&lt;/h4&gt;
+          &lt;h5&gt;Heading 5&lt;/h5&gt;
+          &lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+        <p class="main-p tips"><strong>Note:</strong> Browsers automatically add some white space (a margin) before and after a heading.</p>
+        <hr class="subject-div">
+        <h3 class="head">Headings Are Important</h3>
+        <p class="main-p">Search engines use the headings to index the structure and content of your web pages.<br>Users often skim a page by its headings. It is important to use headings to show the document structure.<br><span class="code-in-text">&lt;h1&gt;</span> headings should be used for main headings, followed by <span class="code-in-text">&lt;h2&gt;</span> headings, then the less important <span class="code-in-text">&lt;h3&gt;</span>, and so on.</p>
+        <p class="main-p tips"><strong>Note:</strong> Use HTML headings for headings only. Don't use headings to make text <strong>BIG</strong> or <strong>bold</strong>.</p>
+        <hr class="subject-div">
+        <h3 class="head">Bigger Headings</h3>
+        <p class="main-p">Each HTML heading has a default size. However, you can specify the size for any heading with the <span class="code-in-text">style</span> attribute, using<br> the CSS <span class="code-in-text">font-size</span> property:</p>
+        <pre class="html-code">
+          &lt;h1 style="font-size:60px;"&gt;Heading 1&lt;/h1&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Horizontal Rules</h3>
+        <p class="main-p">The <span class="code-in-text">&lt;hr&gt;</span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.<br>The <span class="code-in-text">&lt;hr&gt;</span> element is used to separate content (or define a change) in an HTML page:</p>
+        <pre class="html-code">
+          &lt;h1&gt;This is heading 1&lt;/h1&gt;
+          &lt;p&gt;This is some text.&lt;/p&gt;
+          &lt;hr&gt;
+          &lt;h2&gt;This is heading 2&lt;/h2&gt;
+          &lt;p&gt;This is some other text.&lt;/p&gt;
+          &lt;hr&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">The &lt;head&gt; Element</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;head&gt;</span> element is a container for metadata. HTML metadata is data about the HTML document. Metadata is not displayed.<br>The <span class="code-in-text">&lt;head&gt;</span> element is placed between the <span class="code-in-text">&lt;html&gt;</span> tag and the <span class="code-in-text">&lt;body&gt;</span> tag:</p>
+        <pre class="html-code">
+          &lt;!DOCTYPE html&gt;
+           &lt;html&gt;
+  
+             &lt;head&gt;
+             &lt;title&gt;My First HTML&lt;/title&gt;
+             &lt;meta charset="UTF-8"&gt;
+             &lt;/head&gt;
+  
+             &lt;body&gt;
+              .
+              .
+              . </pre> 
+        <p class="main-p tips"><strong>Note:</strong> Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+        <hr class="subject-div">
+        <h3 class="head">How to View HTML Source?</h3>
+        <p class="main-p">Have you ever seen a Web page and wondered "Hey! How did they do that?"</p>
+        <hr class="subject-div">
+        <h3 class="head">View HTML Source Code:</h3>
+        <p class="main-p">Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.</p>
+        <hr class="subject-div">
+        <h3 class="head">Inspect an HTML Element:</h3>
+        <p class="main-p">Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
+        <table class="tables">
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>&lt;html&gt;</td>
+            <td>Defines the root of an HTML document</td>
+          </tr>
+          <tr>
+            <td>&lt;body&gt;</td>
+            <td> Defines the document's body</td>
+          </tr>
+          <tr>
+            <td>&lt;head&gt;</td>
+            <td>A container for all the head elements (title, scripts, styles, meta information, and more)</td>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt; to &lt;h6&gt;</td>
+            <td>Defines HTML headings</td>
+          </tr>
+          <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Defines a thematic change in the content</td>
+          </tr>
+        </table>
+      </article>
+     </section>
+     <section class="main-section" id="paragraphs">
+      <header>
+        <h2 class="main-head">Paragraphs</h2>
+      </header>
+      <hr class="subject-div">
+      <article>
+       <h3 class="head">Paragraphs</h3>
+       <p class="main-p">The HTML <span class="code-in-text">&lt;p&gt;</span> element defines a paragraph:</p>
+       <pre class="html-code">
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;p&gt;This is another paragraph.&lt;/p&gt;</pre>
+       <p class="main-p tips"><strong>Note:</strong> Browsers automatically add some white space (a margin) before and after a paragraph.</p>
+       <hr class="subject-div">
+       <h3 class="head">HTML Display</h3>
+       <p class="main-p">You cannot be sure how HTML will be displayed.<br>Large or small screens, and resized windows will create different results.<br>With HTML, you cannot change the output by adding extra spaces or extra lines in your HTML code.<br>The browser will remove any extra spaces and extra lines when the page is displayed:</p>
+       <pre class="html-code">
+        &lt;p&gt;
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+        &lt;/p&gt;
+  
+        &lt;p&gt;
+        This paragraph
+        contains         a lot of spaces
+        in the source         code,
+        but the        browser
+        ignores it.
+        &lt;/p&gt;</pre>
+       <hr class="subject-div">
+       <h3 class="head">Don't Forget the End Tag</h3>
+       <p class="main-p">Most browsers will display HTML correctly even if you forget the end tag:</p>
+       <pre class="html-code">
+        &lt;p&gt;This is a paragraph.
+        &lt;p&gt;This is another paragraph.</pre>
+       <p class="main-p">The example above will work in most browsers, but do not rely on it.</p>
+       <p class="main-p tips"><strong>Note:</strong> Dropping the end tag can produce unexpected results or errors.</p>
+       <hr class="subject-div">
+       <h3 class="head">HTML Line Breaks</h3>
+       <p class="main-p">The HTML <span class="code-in-text">&lt;br&gt;</span> element defines a line break.<br>Use <span class="code-in-text">&lt;br&gt;</span> if you want a line break (a new line) without starting a new paragraph:</p>
+       <pre class="html-code">
+        &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</pre>
+       <p class="main-p">The <span class="code-in-text">br</span> tag is an empty tag, which means that it has no end tag.</p>
+       <hr class="subject-div">
+       <h3 class="head">The Poem Problem</h3>
+       <p class="main-p">This poem will display on a single line:</p>
+       <pre class="html-code">
+        &lt;p&gt;
+          My Bonnie lies over the ocean.
+  
+          My Bonnie lies over the sea.
+  
+          My Bonnie lies over the ocean.
+  
+          Oh, bring back my Bonnie to me.
+        &lt;/p&gt;</pre>
+       <hr class="subject-div">
+       <h3 class="head">The &lt;pre&gt; Element</h3>
+       <p class="main-p">The HTML <span class="code-in-text">pre</span> element defines preformatted text.<br>The text inside a <span class="code-in-text">pre</span> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+       <pre class="html-code">
+        &lt;pre&gt;
+          My Bonnie lies over the ocean.
+  
+          My Bonnie lies over the sea.
+  
+          My Bonnie lies over the ocean.
+  
+          Oh, bring back my Bonnie to me.
+        &lt;/pre&gt;</pre>
+       <hr class="subject-div">
+       <h3 class="head">Tag Reference</h3>
+       <p class="main-p">Tag reference contains additional information about these tags and their attributes.</p>
+       <table class="tables">
+         <tr>
+           <th>Tag</th>  
+           <th>Description</th>
+         </tr>  
+         <tr>
+           <td>&lt;p&gt;</td>
+           <td>Defines a paragraph</td>
+         </tr>  
+         <tr>
+           <td>&lt;br&gt;</td>
+           <td>Inserts a single line break</td>
+         </tr>  
+         <tr>
+           <td>&lt;pre&gt;</td>
+           <td>Defines pre-formatted text</td>
+         </tr>  
+       </table>
+      </article>
+     </section>
+     <section class="main-section" id="styles">
+       <header>
+          <h2 class="main-head">Styles</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <p class="main-p example-text"><span style="color: red">I am Red</span><br><span class="code-in-text">I am Blue</span><br><span style="font-size: 22px;">I am Big</span></p> 
+        <hr class="subject-div">
+        <h3 class="head">The Style Attribute</h3>
+        <p class="main-p">Setting the <span class="code-in-text">style</span> of an HTML element, can be done with the style attribute.<br>The HTML <span class="code-in-text">style</span> attribute has the following <strong>syntax</strong>:</p>
+        <pre class="html-code">
+          &lt;tagname style="property:value;"&gt;</pre>
+        <p class="main-p">The <strong>property</strong> is a CSS property. The value is a CSS <strong>value</strong>.</p>
+        <p class="main-p tips">You can learn more about CSS on the web.</p>
+        <hr class="subject-div">
+        <h3 class="head">Background Color</h3>
+        <p class="main-p">The CSS <span class="code-in-text">background-color</span> property defines the background color for an HTML element.<br>This example sets the background color for a page to powderblue:</p>
+        <pre class="html-code">
+          &lt;body style="background-color:powderblue;"&gt;
+  
+           &lt;h1&gt;This is a heading&lt;/h1&gt;
+           &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  
+          &lt;/body&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Text Color</h3>
+        <p class="main-p">The CSS <span class="code-in-text">color</span> property defines the text color for an HTML element:</p>
+        <pre class="html-code">
+          &lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;
+          &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Fonts</h3>
+        <p class="main-p">The CSS <span class="code-in-text">font-family</span> property defines the font to be used for an HTML element:</p>
+        <pre class="html-code">
+          &lt;h1 style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;
+          &lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Text Size</h3>
+        <p class="main-p">The CSS <span class="code-in-text">font-size</span> property defines the text size for an HTML element:</p>
+        <pre class="html-code">
+          &lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt;
+          &lt;p style="font-size:160%;"&gt;This is a paragraph.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Text Alignment</h3>
+        <p class="main-p">The CSS <span class="code-in-text">text-align</span> property defines the horizontal text alignment for an HTML element:</p>
+        <pre class="html-code">
+          &lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt;
+          &lt;p style="text-align:center;"&gt;Centered paragraph.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Chapter Summary</h3>
+        <ul>
+          <li>Use the <span class="code-in-text">style</span> attribute for styling HTML elements
+          <li>Use <span class="code-in-text">background-color</span> for background color
+          <li>Use <span class="code-in-text">color</span> for text colors
+          <li>Use <span class="code-in-text">font-family</span> for text fonts
+          <li>Use <span class="code-in-text">font-size</span> for text sizes
+          <li>Use <span class="code-in-text">text-align</span> for text alignment
+        </ul>
+      </article>
+     </section>
+     <section class="main-section" id="text_formatting">
+       <header>
+          <h2 class="main-head">Text Formatting</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <p class="main-p example-text"><strong>This text is bold</strong><br><em>This text is italic</em><br>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+        <hr class="subject-div">
+        <h3 class="head">Formatting Elements</h3>
+        <p class="main-p">In the previous chapter, you learned about the HTML <strong>style attribute</strong>.<br>HTML also defines special <strong>elements</strong> for defining text with a special <strong>meaning</strong>.<br>HTML uses elements like <span class="code-in-text">&lt;b&gt;</span> and <span class="code-in-text">&lt;i&gt;</span> for formatting output, like <strong>bold</strong> or italic text.<br>Formatting elements were designed to display special types of text:</p>
+        <ul>
+          <li><span class="code-in-text">&lt;b&gt;</span> - Bold text
+          <li><span class="code-in-text">&lt;strong&gt;</span> - Important text
+          <li><span class="code-in-text">&lt;i&gt;</span> - Italic text
+          <li><span class="code-in-text">&lt;em&gt;</span> - Emphasized text
+          <li><span class="code-in-text">&lt;mark&gt;</span> - Marked text
+          <li><span class="code-in-text">&lt;small&gt;</span> - Small text
+          <li><span class="code-in-text">&lt;del&gt;</span> - Deleted text
+          <li><span class="code-in-text">&lt;ins&gt;</span> - Inserted text
+          <li><span class="code-in-text">&lt;sub&gt;</span> - Subscript text
+          <li><span class="code-in-text">&lt;sup&gt;</span> - Superscript text
+        </ul>
+        <hr class="subject-div">
+        <h3 class="head">&lt;b&gt; and &lt;strong&gt; Elements</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;b&gt;</span> element defines bold text, without any extra importance.</p>
+        <pre class="html-code">
+          &lt;b&gt;This text is bold&lt;/b&gt;</pre> 
+        <p class="main-p">The HTML <span class="code-in-text">&lt;strong&gt;</span> element defines <strong>strong</strong> text, with added semantic "strong" importance.</p>
+        <pre class="html-code">
+          &lt;strong&gt;This text is strong&lt;/strong&gt;</pre> 
+        <hr class="subject-div">
+        <h3 class="head">&lt;i&gt; and &lt;em&gt; Elements</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;i&gt;</span> element defines italic text, without any extra importance.</p>
+        <pre class="html-code">
+          &lt;i&gt;This text is italic&lt;/i&gt;</pre> 
+        <p class="main-p">The HTML <span class="code-in-text">em</span> element defines emphasized text, with added semantic importance.</p>
+        <pre class="html-code">
+          &lt;em&gt;This text is emphasized&lt;/em&gt;</pre>
+        <p class="main-p tips"><strong>Note:</strong> Browsers display <span class="code-in-text">&lt;strong&gt;</span> as <span class="code-in-text">&lt;b&gt;</span>, and <span class="code-in-text">&lt;em&gt;</span> as <span class="code-in-text">&lt;i&gt;</span>. However, there is a difference in the meaning of these tags: <span class="code-in-text">&lt;b&gt;</span> and <span class="code-in-text">&lt;i&gt;</span> defines bold and italic text, but <span class="code-in-text">&lt;strong&gt;</span> and <span class="code-in-text">&lt;em&gt;</span> means that the text is "important".</p>
+        <hr class="subject-div">
+        <h3 class="head">&lt;small&gt; Element</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;small&gt;</span> element defines smaller text:</p>
+        <pre class="html-code">
+          &lt;h2&gt;HTML &lt;small&gt;Small&lt;/small&gt; Formatting&lt;/h2&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">&lt;mark&gt; Element</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;mark&gt;</span> element defines marked/highlighted text:</p>
+        <pre class="html-code">
+          &lt;h2&gt;HTML &lt;mark&gt;Marked&lt;/mark&gt; Formatting&lt;/h2&gt;</pre> 
+        <hr class="subject-div">
+        <h3 class="head">&lt;del&gt; Element</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;del&gt;</span> element defines deleted/removed text.</p>
+        <pre class="html-code">
+          &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;</pre>  
+        <hr class="subject-div">
+        <h3 class="head">&lt;ins&gt; Element</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;ins&gt;</span> element defines inserted/added text.</p>
+        <pre class="html-code">
+          &lt;p&gt;My favorite &lt;ins&gt;color&lt;/ins&gt; is red.&lt;/p&gt;</pre> 
+        <hr class="subject-div">
+        <h3 class="head">&lt;sub&gt; Element</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;sub&gt;</span> element defines subscripted text.</p>
+        <pre class="html-code">
+          &lt;p&gt;This is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">&lt;sup&gt; Element</h3>
+        <p class="main-p">The HTML <span class="code-in-text">&lt;sup&gt;</span> element defines superscripted text.</p>
+        <pre class="html-code">
+          &lt;p&gt;This is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;</pre>
+        <hr class="subject-div">
+        <h3 class="head">Text Formatting Elements</h3>
+        <table class="tables">
+         <tr>
+           <th>Tag</th>
+           <th>Description</th>
+         </tr>
+         <tr>
+           <td>&lt;b&gt;</td>
+           <td>Defines bold text</td>
+         </tr>
+         <tr>
+           <td>&lt;em&gt;</td>
+           <td>Defines emphasized text</td>
+         </tr>
+         <tr>
+           <td>&lt;i&gt;</td>
+           <td>Defines italic text</td>
+         </tr>
+         <tr>
+           <td>&lt;small&gt;</td>
+           <td>Defines smaller text</td>
+         </tr>
+         <tr>
+           <td>&lt;strong&gt;</td>
+           <td>Defines important text</td>
+         </tr>
+         <tr>
+           <td>&lt;sub&gt;</td>
+           <td>Defines subscripted text</td>
+         </tr>
+         <tr>
+           <td>&lt;sup&gt;</td>
+           <td>Defines superscripted text</td>
+         </tr>
+         <tr>
+           <td>&lt;ins&gt;</td>
+           <td>Defines inserted text</td>
+         </tr>
+         <tr>
+           <td>&lt;del&gt;</td>
+           <td>Defines deleted text</td>
+         </tr>
+         <tr>
+           <td>&lt;mark&gt;</td>
+           <td>Defines marked/highlighted text</td>
+         </tr>
+        </table>
+      </article>
+     </section>
+     <section class="main-section" id="comments">
+       <header>
+          <h2 class="main-head">Comments</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <p class="main-p">Comment tags are used to insert comments in the HTML source code.</p>
+        <hr class="subject-div">
+        <h3 class="head">Comment Tags</h3>
+        <p class="main-p">You can add comments to your HTML source by using the following syntax:</p>
+        <pre class="html-code">
+          &lt;!-- Write your comments here --&gt;</pre>
+        <p class="main-p">Notice that there is an exclamation point (!) in the opening tag, but not in the closing tag.</p>
+        <p class="main-p tips"><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+        <p class="main-p">With comments you can place notifications and reminders in your HTML:</p>
+        <pre class="html-code">
+          &lt;!-- This is a comment --&gt;
+  
+          &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  
+          &lt;!-- Remember to add more information here --&gt;</pre>
+        <p class="main-p">Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors:</p>
+        <pre class="html-code">
+          &lt;!-- Do not display this image at the moment
+          &lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;
+          --&gt;</pre>
+      </article>
+     </section>
+     <section class="main-section" id="reference">
+       <header>
+         <h2 class="main-head">Reference</h2>
+       </header>
+       <hr class="subject-div">
+       <article>
+        <h3 class="head">Thank you for reading!</h3>
+        <p class="main-p">All the documentation in this page is taken from <a href="https://www.w3schools.com/html" target="_blank">w3schools !</a></p>
+        <hr class="subject-div">
+        <p class="main-p" style="text-align: center">This is a project done for <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a> as part of quiz to bulid a Technical Documantation page</p>
+        <hr class="subject-div">  
+      </article>
+     </section>
+    </main>
+    <footer class="centerIt">
+        <h2 class="centerIt" id="footer-text">HTML</h2>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
